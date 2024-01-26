@@ -1,49 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enekeskonyvek</title>
-    <style>
-        body {
-            background-color: #E1F0DA;
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            display: flex;
-        }
-
-        #contentContainer {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-        }
-
-        #songListContainer {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        #filterContainer,
-        #songList,
-        #songDisplay {
-            list-style-type: none;
-            margin: 10px;
-            width: 20%;
-        }
-
-        #songList li {
-            cursor: pointer;
-            margin-bottom: 5px;
-            width: 400px;
-        }
-
-        #songDisplay {
-            width: 100%;
-        }
-
-        /* Add more styling as needed */
-    </style>
+    <link rel="stylesheet" href="enekstyle.css">
 </head>
+
 <body>
 
 <!-- Content Container -->
@@ -59,10 +22,11 @@
             <option value="gyom">Gyömösz</option>
             <option value="sal">Salamon</option>
         </select>
-    <p>Válassz egy énekeskönyvet, majd kattints a kívánt ének címére.<br><br>Még nagyon sok ének feltöltés alatt van, kis türelem.</p>
+        
+    <!--<p>Válassz egy énekeskönyvet, majd kattints a kívánt ének címére.<br><br>Még nagyon sok ének feltöltés alatt van, kis türelem.</p>
     <p>alapból akkordozásra lett kialakítva, ezért a többségüknél nincs kotta és pár éneknél csak szöveg van</p>
     <p>Blanka<br>2024.01.24</p>
-    <p>FYI no, it's not responsive (yet) ;)</p>
+    <p>FYI no, it's not responsive (yet) ;)</p>-->
     </div>
 
     <!-- Song List Container -->
@@ -98,7 +62,7 @@
 {title: "Aki magát felmagasztalja", index: 15, cscs: null, neh: null, ber: null, gyom: 5, sal: null, sheetMusic: "aki_magat_felmagasztalja.png"},
 {title: "Akik Istent szeretik", index: 16, cscs: null, neh: null, ber: null, gyom: 6, sal: null, sheetMusic: "akik_istent_szeretik.png"},
 {title: "Áldásoddal megyünk", index: 17, cscs: null, neh: 82, ber: 16, gyom: 7, sal: null, sheetMusic: "aldasoddal_megyunk.png"},
-{title: "Áldd Lelkem Istened", index: 18, cscs: 606, neh: null, ber: null, gyom: 8, sal: null, sheetMusic: "aldd_lelkem_istened.png"},
+{title: "Áldd Lelkem Istened", index: 18, cscs: 606, neh: 109, ber: null, gyom: 8, sal: null, sheetMusic: "aldd_lelkem_istened.png"},
 {title: "Áldj Meg Minket Úr Isten", index: 19, cscs: 607, neh: null, ber: null, gyom: null, sal: null, sheetMusic: "aldj_meg_minket_ur_isten.png"},
 {title: "Áldjad Én Lelkem Hű Uradat", index: 20, cscs: 609, neh: null, ber: null, gyom: 9, sal: null, sheetMusic: "aldjad_en_lelkem_hu_uradat.png"},
 {title: "Áldjam lelkem, áldjad életem", index: 21, cscs: null, neh: 53, ber: 90, gyom: null, sal: null, sheetMusic: "aldjam_lelkem_aldjad_eletem.png"},
@@ -108,7 +72,6 @@
 {title: "Áldott A Férfi", index: 25, cscs: 650, neh: 13, ber: 6, gyom: null, sal: null, sheetMusic: "aldott_a_ferfi.png"},
 {title: "Áldott Légy Mert Megváltottál", index: 26, cscs: 610, neh: null, ber: null, gyom: null, sal: null, sheetMusic: "aldott_legy_mert_megvaltottal.png"},
 {title: "Áll a Krisztus szent keresztje", index: 27, cscs: null, neh: null, ber: null, gyom: null, sal: 31, sheetMusic: "all_a_krisztus_szent_keresztje.png"},
-{title: "Álld lelkem Istened", index: 28, cscs: null, neh: 109, ber: null, gyom: null, sal: null, sheetMusic: "alld_lelkem_istened.png"},
 {title: "Ameddig Jézus él", index: 29, cscs: null, neh: 110, ber: null, gyom: null, sal: null, sheetMusic: "ameddig_jezus_el.png"},
 {title: "Amint vagyok", index: 30, cscs: null, neh: 91, ber: 12, gyom: 11, sal: 38, sheetMusic: "amint_vagyok.png"},
 {title: "Amit szívünk esdve kér", index: 31, cscs: null, neh: null, ber: 104, gyom: null, sal: 19, sheetMusic: "amit_szivunk_esdve_ker.png"},
@@ -190,7 +153,7 @@
 {title: "Istenéhez Dániel", index: 107, cscs: null, neh: null, ber: null, gyom: 47, sal: null, sheetMusic: "istenehez_daniel.png"},
 {title: "Istenem Lásd Meg", index: 108, cscs: 635, neh: null, ber: null, gyom: null, sal: null, sheetMusic: "istenem_lasd_meg.png"},
 {title: "Istenem Nem Értem", index: 109, cscs: 636, neh: null, ber: null, gyom: null, sal: null, sheetMusic: "istenem_nem_ertem.png"},
-{title: "Istenünk Itt Hozzuk", index: 110, cscs: 681, neh: null, ber: null, gyom: null, sal: null, sheetMusic: "istenunk_itt_hozzuk.png"},
+{title: "Istenünk Itt Hozzuk", index: 110, cscs: 681, neh: 3, ber: 35, gyom: 125, sal: null, sheetMusic: "te_csak_az_istennek_orszagat_keresd.png"},
 {title: "Itt az este", index: 111, cscs: null, neh: 80, ber: 37, gyom: 48, sal: 66, sheetMusic: "itt_az_este.png"},
 {title: "Itt az írás, Dániel", index: 112, cscs: null, neh: null, ber: null, gyom: 49, sal: null, sheetMusic: "itt_az_iras_daniel.png"},
 {title: "Itt vagyok most, jó Uram", index: 113, cscs: null, neh: 67, ber: null, gyom: null, sal: null, sheetMusic: "itt_vagyok_most_jo_uram.png"},
@@ -329,7 +292,7 @@
 {title: "Szólj, szólj hozzám Uram", index: 247, cscs: null, neh: null, ber: null, gyom: 123, sal: 12, sheetMusic: "szolj_szolj_hozzam_uram.png"},
 {title: "Szólnak a harangok a toronyban", index: 248, cscs: null, neh: null, ber: null, gyom: 124, sal: null, sheetMusic: "szolnak_a_harangok_a_toronyban.png"},
 {title: "Szólott Az Isten", index: 249, cscs: 684, neh: null, ber: null, gyom: null, sal: null, sheetMusic: "szolott_az_isten.png"},
-{title: "Te csak az Istennek", index: 250, cscs: null, neh: 3, ber: 35, gyom: 125, sal: null, sheetMusic: "te_csak_az_istennek_orszagat_keresd.png"},
+{title: "Te csak az Istennek", index: 250, cscs: 681, neh: 3, ber: 35, gyom: 125, sal: null, sheetMusic: "te_csak_az_istennek_orszagat_keresd.png"},
 {title: "Tégy Engem Békeköveteddé", index: 251, cscs: 686, neh: 10, ber: 41, gyom: null, sal: null, sheetMusic: "tegy_engem_bekekovetedde.png"},
 {title: "Tégy Uram Engem Áldássá", index: 252, cscs: 689, neh: 23, ber: 57, gyom: 126, sal: null, sheetMusic: "tegy_uram_engem_aldassa.png"},
 {title: "Tehozzád Jövünk", index: 253, cscs: 685, neh: 7, ber: 3, gyom: 127, sal: null, sheetMusic: "tehozzad_jovunk.png"},
@@ -410,7 +373,9 @@
             songListContainer.appendChild(listItem);
         });
     }
-
+    
+    // Call the function to generate the initial filtered and sorted song list generateFilteredSongList();
+    
     // Function to dynamically display sheet music
     function displaySheetMusic(index, filteredSongs) {
         const song = filteredSongs[index];
@@ -424,12 +389,13 @@
                 Bérea: ${song.ber} |
                 Gyömösz: ${song.gyom} |
                 Salamon: ${song.sal} </p>
-            <iframe src="${song.sheetMusic}" style="border:none;" width="70%" height="1000px"></iframe>
+            <img src="${song.sheetMusic}" style="border:none;"></img>
         `;
+        //style="border:none;"
 
         songDisplayContainer.innerHTML = sheetMusicHTML;
             
-        // Scroll to the top of the page
+        // Scroll to the top of the page 
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
