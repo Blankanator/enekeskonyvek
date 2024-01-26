@@ -1,0 +1,50 @@
+body {
+    background-color: #E1F0DA;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    width: 100%;
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: row; 
+}
+
+#songListContainer {
+    margin-right: 20px;
+}
+
+#filterContainer {
+    margin: 10px;
+    width: 20%;
+}
+
+#songList,
+#songDisplay {
+    list-style-type: none;
+    margin: 10px;
+    width: 100%;
+}
+
+#songDisplay {
+    order: -1;
+}
+
+
+#songList li {
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 400px;
+}
+
+
+img {
+    width: 600px; /* Adjust the width as needed */
+}
+
+/*====RESZPONZIVITAS====
+
+#songDisplay {
+    width: 90%;
+}*/
